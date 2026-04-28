@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OGB dataset (didownload otomatis)
+dataset/
+
+# Model files (opsional — uncomment jika terlalu besar untuk GitHub)
+# model/best_model.pt
+# model/final_model.pt
+
+# VS Code
+.vscode/settings.json
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
