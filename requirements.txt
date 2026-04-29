@@ -1,44 +1,12 @@
-# GNN MolHIV — Requirements
-# Install: pip install -r requirements.txt
-#
-# Catatan setup:
-#   1. Install PyTorch dulu sesuai versi CUDA kamu dari https://pytorch.org
-#      Contoh (CPU): pip install torch==2.1.0
-#   2. Install PyTorch Geometric:
-#      pip install torch-geometric
-#   3. Install sisanya:
-#      pip install -r requirements.txt
-#
-# Untuk macOS Apple Silicon (M1/M2/M3):
-#   conda install pytorch torchvision -c pytorch
-#   pip install torch-geometric
-#   pip install -r requirements.txt
-
-# ── Core Deep Learning ───────────────────────────────────────────────────────
-torch>=2.0.0
-torch-geometric>=2.4.0
-
-# ── OGB (Open Graph Benchmark) ───────────────────────────────────────────────
-ogb>=1.3.6
-
-# ── Cheminformatics ──────────────────────────────────────────────────────────
-# RDKit tidak tersedia di pip untuk semua platform.
-# Gunakan: conda install -c conda-forge rdkit
-# atau   : pip install rdkit-pypi (unofficial, Python 3.8-3.10)
-rdkit-pypi>=2022.9.5
-
-# ── Data Science ─────────────────────────────────────────────────────────────
-numpy>=1.24.0
+torch==2.1.0
+torch-geometric==2.4.0
+ogb==1.3.6
+rdkit==2023.9.5
+streamlit>=1.28.0
 pandas>=2.0.0
+numpy>=1.24.0
 scikit-learn>=1.3.0
-
-# ── Visualisasi ──────────────────────────────────────────────────────────────
 matplotlib>=3.7.0
 seaborn>=0.12.0
 Pillow>=10.0.0
-
-# ── Deployment ───────────────────────────────────────────────────────────────
-streamlit>=1.28.0
-
-# ── Utilities ────────────────────────────────────────────────────────────────
 tqdm>=4.65.0
